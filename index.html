@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Autonomous Car Drifting using Reinforcement Learning</title>
+	<meta name="description" content="Autonomous Car Drifting using Reinforcement Learning">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css rel=stylesheet crossorigin=anonymous integrity=sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat:400,500,700" rel="stylesheet">
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css rel=stylesheet>
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<style>
+		
+		.fit { /* set relative picture size */
+			width: 100%;
+			height: 100%;
+		}
+		.center {
+			display: block;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>		
+	<div>
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+		</div>
+		<div>
+			<main>
+				<nav class="navbar navbar-custom navbar-fixed-top" id=mainNav>
+	                <div class=container>
+	                    <div class="page-scroll navbar-header">
+	                        <button class=navbar-toggle type=button data-target=#bs-example-navbar-collapse-1 data-toggle=collapse><i class="fa fa-bars"></i></button><a href=#page-top class=page-scroll></a>
+	                    </div>
+	                    <div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
+	                        <ul class="nav navbar-nav navbar-right">
+	                            <li class=hidden>
+	                                <li><a href=#services class=page-scroll>Project Overview</a></li>
+	                                <li><a href=#functions class=page-scroll>Scope</a></li>
+	                                <li><a href=#about class=page-scroll>Schedule</a></li>
+	                                <li><a href=#team class=page-scroll>Team</a></li>
+	                                <li><a href=#contact class=page-scroll>Contact</a></li>
+	                        </ul>
+	                    </div>
+	                </div>
+	            </nav>
+				<img class="center fit" src="img/main.jpg">
+				<section id=team class=homeslide>
+	                <div class=container>
+	                    <div class=row>
+	                        <div class="text-center col-lg-12">
+	                            
+	                            <h2 class=section-heading>Our Team</h2>
+	                       	</div>
+	                    </div>
+	                    <div class=row>
+	                        <div class=col-sm-4>
+	                            <div class=team-member><img src=img/kanak.jpg alt="Kanak Kabara" class="img-responsive img-circle">
+	                                <h4>Kanak Kabara</h4>
+	                            </div>
+	                        </div>
+	                        <div class=col-sm-4>
+	                            <div class=team-member><img src=img/rachit.jpg class="img-responsive img-circle" alt="Rachit Jain">
+	                                <h4>Rachit Jain</h4>
+	                            </div>
+	                        </div>
+	                        <div class=col-sm-4>
+	                            <div class=team-member><img src=img/sourav.jpg class="img-responsive img-circle" alt="Sourav Bhattacharjee">
+	                                <h4>Sourav Bhattacharjee</h4>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class=row>
+	                        <div class="text-center col-lg-8 col-lg-offset-2"></div>
+	                    </div>
+	                </div>
+	            </section>
+			</main>
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script type="text/javascript" language="JavaScript">
+		function set_body_height() { // set body height = window height
+			$('body').height($(window).height());
+		}
+		$(document).ready(function() {
+			$(window).bind('resize', set_body_height);
+			set_body_height();
+		});
+	</script>
+	<script type="text/javascript">
+	    (function($) { 
+	    	"use strict";
+	        $('a.page-scroll').bind('click', function(event) { 
+	        	var $anchor = $(this);
+	            $('html, body').stop().animate({ scrollTop: ($($anchor.attr('href')).offset().top - 50) }, 1250, 'easeOutExpo');
+	            event.preventDefault(); 
+	        });
+	        $('body').scrollspy({ target: '.navbar-fixed-top', offset: 51 });
+	        $('.navbar-collapse ul li a').click(function() { $('.navbar-toggle:visible').click(); });
+	        $('#mainNav').affix({ offset: { top: 100 } }) })(jQuery);
+	</script>
+	<script src="js/main.js"></script>
+</body>
+</html>
