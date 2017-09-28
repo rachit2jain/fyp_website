@@ -17,6 +17,7 @@
     <link href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css rel=stylesheet>
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js crossorigin=anonymous integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 	<style>
 		
 		.fit { /* set relative picture size */
@@ -45,16 +46,39 @@
                     <div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
                         <ul class="nav navbar-nav navbar-right">
                             <li class=hidden>
-                                <li><a href=#services class=page-scroll>Project Overview</a></li>
-                                <li><a href=#functions class=page-scroll>Scope</a></li>
-                                <li><a href=#about class=page-scroll>Schedule</a></li>
+                                <li><a href=#overview class=page-scroll>Overview</a></li>
+                                <li><a href=#objective class=page-scroll>Objective</a></li>
+                                <li><a href=#schedule class=page-scroll>Schedule</a></li>
                                 <li><a href=#team class=page-scroll>Team</a></li>
-                                <li><a href=#contact class=page-scroll>Contact</a></li>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 			<img class="center fit" src="img/main5.jpg">
+			<section id="overview" class=homeslide>
+				<div class="container" >
+					<h3 class="objective-heading"> Project Overview </h3>
+					<p class="objective-class">
+						Hydroplaning refers to a situation which occurs when a layer of water builds between car tires and the road. The tires of the car encounter more water than they can scatter, which results in the loss of traction. This can cause the car to slip or drift, leading to loss of control and many accidents. According to the United States’ Department of Transportation, wet and icy roads are responsible for 19% of all vehicle crashes, and 86% of all weather-related crashes in the United States.
+					</p>
+					<p class="objective-class">
+						Control algorithms in current self-driving car systems (ABS, ESC etc.) try and mitigate the chances of slipping due to its unpredictable nature. Sufficiently lowering the speed of the car and making turns that are not too tight will mostly prevent slipping, but this does not consider cases where the system must make evasive moves (in which case the speed and turn angle will most likely be sharp) or when a car is already in a slipping state due to the driver’s fault. To ensure that these systems are as robust and safe as possible, it is paramount to study drifting, and eventually deduce how systems can respond quickly to unintentional drift states.
+					</p>
+					<p class="objective-class">
+						Our project is aimed at studying drifting. To do so, we use Reinforcement Learning (RL), that learns control policies from trial-and-error, much like how humans learn and solve various problems by interacting with the environment. This field is rapidly evolving, and we try and use some of the cutting-edge technologies, like PILCO, that are addressed in the methodology outlined below.
+					</p> 
+				</div>
+			</section>
+			<section id="objective" class=homeslide>
+				<div class="jumbotron" >
+					<h3 class="objective-heading"> Project Objective </h3>
+					<p class="objective-class">
+						The objective of this project is to study a real world problem of high speed cars skidding when trying to turn during rain/wet roads. The area of drifting falls into two categories – sustained drift and transient drift. Due to the vast breadth of the two categories, our project will mainly focus on sustained drift, and more specifically steady state circular drift. We are only looking to handle the ‘studying’ aspect of drifting through this project - by teaching the car how to drift autonomously, we ensure that the car is able to understand the concept of drifting, and hence cope with the unpredictability that is inherent to the drifting state, as described above. Time permitting, we will also try to get the car to learn how to safely escape a drift state and return to a safe stop or straight-line motion. 
+
+					</p> 
+				</div>
+			</section>
 			<section id=team class=homeslide>
                 <div class=container>
                     <div class=row>

@@ -1,3 +1,16 @@
+.objective-class{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.objective-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#overview p {
+    font-size: 20px;
+    font-weight: lighter;
+}
 .team-image{
     position: relative;
     max-width: 70%;
